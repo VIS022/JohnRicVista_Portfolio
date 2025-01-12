@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="certificate.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./assets/jrv.png" alt="Logo" class="logo-img">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li> <!-- Updated this link -->
+                <li><a href="index.html#experience">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <main>
+        <h1>My Certificates</h1>
+        <div class="certificate-container">
+            <div class="certificate-card">
+                <img src="./assets/HTML_CERTIFICATE_JohnRicVista.jpg" alt="Certificate 1" class="certificate-img" onclick="openModal(this)">
+                <h2>HTML - The Complete Guide</h2>
+                <p>Issued by Organization: UDEMY</p>
+            </div>
+            <div class="certificate-card">
+                <img src="./assets/CSS, JAVASCRIPT, PHP_CERT.jpg" alt="Certificate 2" class="certificate-img" onclick="openModal(this)">
+                <h2>CSS, JAVASCRIPT, PHP</h2>
+                <p>Issued by Organization: UDEMY</p>
+            </div>
+            <div class="certificate-card">
+                <img src="./assets/HTML5 & CSS3 Complete Course.jpg" alt="Certificate 3" class="certificate-img" onclick="openModal(this)">
+                <h2>HTML5 & CSS3 Complete Course</h2>
+                <p>Issued by Organization: UDEMY</p>
+            </div>
+            <!-- Add more certificate cards as needed -->
+        </div>
+    </main>
+
+    <h2>-----More Certificates to be followed-----</h2>
+
+    <!-- Modal for enlarged image -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="certificate.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
